@@ -96,3 +96,6 @@ THEORY SUMMARY:
 
 console.log("Hello Krishna Thakur")
 
+
+console.log("Happy New Year")
+console.log("Duniya Teri Nahi Hai , Tu Pyar k Chakkar Cho de ")
