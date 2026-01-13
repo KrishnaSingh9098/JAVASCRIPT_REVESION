@@ -1,0 +1,190 @@
+🔵 Week 2 (Days 8–14): React Basics (CORE REACT)
+Day 8: React Fundamentals
+
+What is React?
+
+JSX
+
+Components
+
+Folder structure
+
+Day 9: Props & State
+
+Props passing
+
+useState
+
+Re-rendering logic
+
+Day 10: Events & Forms
+
+onClick, onChange
+
+Controlled components
+
+Form validation basics
+
+Day 11: Rendering Lists
+
+.map() in JSX
+
+key prop
+
+Conditional rendering
+
+Day 12: useEffect & Lifecycle
+
+useEffect
+
+Dependency array
+
+API calls in React
+
+Day 13–14: Project 1
+
+✅ Build:
+
+Todo App
+
+Add / Delete / Edit
+
+Save to localStorage
+
+🟣 Week 3 (Days 15–21): Advanced React (INDUSTRY LEVEL)
+Day 15: Component Design
+
+Smart vs dumb components
+
+Reusable components
+
+Props drilling
+
+Day 16: Context API
+
+useContext
+
+Global state (theme, auth)
+
+Day 17: Custom Hooks
+
+Create reusable hooks
+
+Logic separation
+
+Day 18: Performance Basics
+
+React.memo
+
+useCallback
+
+useMemo
+
+Day 19: Error Handling
+
+Error boundaries
+
+Loading & error states
+
+Day 20–21: Project 2
+
+✅ Build:
+
+API-based app (Weather / Products / Movies)
+
+Search + filters
+
+Loading & error handling
+
+🔴 Week 4 (Days 22–30): Industry Ready Skills
+Day 22: Git & GitHub
+
+Git basics
+
+Branching
+
+PR workflow
+
+Day 23: Styling
+
+CSS Modules
+
+Styled Components
+
+Tailwind (optional but popular)
+
+Day 24: Routing
+
+React Router
+
+Protected routes
+
+404 pages
+
+Day 25: Forms (Advanced)
+
+Validation
+
+Reusable form components
+
+Day 26: TypeScript (Highly Recommended)
+
+Types for props & state
+
+Interfaces
+
+Benefits in real jobs
+
+Day 27: Testing (Basics)
+
+Jest
+
+React Testing Library
+
+Day 28–29: Final Project (PORTFOLIO)
+
+✅ Build:
+
+Full React App
+
+Authentication (fake or API)
+
+CRUD operations
+
+Clean UI
+
+Day 30: Interview & Deployment
+
+Deploy to Netlify / Vercel
+
+Prepare interview questions
+
+Optimize resume & GitHub
+
+🧠 JavaScript You’ll Know by End
+
+✅ ES6+
+✅ Async JS
+✅ Arrays & objects
+✅ Immutability
+✅ React-focused JS (perfect for jobs)
+
+💼 What Makes You “Industry-Ready”
+
+✔ Real projects
+✔ Clean code
+✔ GitHub profile
+✔ API handling
+✔ Error & loading states
+
+🎯 Final Advice (IMPORTANT)
+
+You don’t master JS before React
+You master JS through React
+
+If you want next, I can:
+1️⃣ Give React + JS interview questions
+2️⃣ Suggest portfolio project ideas
+3️⃣ Create a job-focused React checklist
+
+Tell me what you want next 👌
