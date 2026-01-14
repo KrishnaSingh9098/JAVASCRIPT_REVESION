@@ -1,0 +1,53 @@
+✅ In English
+
+Array.from() only works on:
+
+Array-like objects (objects with a length property), or
+
+Iterable objects (like arrays, strings, maps, sets)
+
+Your object:
+
+{ Name: "Krishna" }
+
+
+❌ is not iterable
+❌ does not have a length property
+
+So JavaScript treats it as an array-like object with:
+
+length === undefined (or 0)
+
+
+👉 Result: empty array []
+
+That’s why the output is:
+
+[]
+
+
+
+
+ 👉 If you want values:
+
+ Array.from(Object.values({ Name: "Krishna" }))
+// ["Krishna"]
+
+
+👉 If you want keys:
+
+Array.from(Object.keys({ Name: "Krishna" }))
+// ["Name"]
+
+
+👉 If you want entries:
+
+Array.from(Object.entries({ Name: "Krishna" }))
+// [["Name", "Krishna"]]
+
+
+
+🧠 Quick Tip
+
+Array.from() ❌ ≠ “convert any object to array”
+It only converts iterables or array-like objects.

@@ -151,3 +151,30 @@ console.log(s);
 
 
 // FIlter :
+
+
+
+
+   let items = [250,645,300,900,50]
+   let i=0;
+   for(let val of items)
+   {
+    console.log(`value of index ${i} = ${val}`)
+    let offer = val/10;
+    items[i] = items[i]-offer ;
+    console.log(`value after offer = ${items[i]}`)
+    i++;
+   }
+
+
+
+   let arr3 = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"]
+   console.log(arr3)
+   arr3.shift()
+   console.log(arr3)
+   arr3.splice(2,1,"OLA")
+   console.log(arr3)
+   arr3.push("Amazon")
+   console.log(arr3)
+
+   

@@ -1,0 +1,479 @@
+                                            /* FUNCTIONS IN JS  */
+
+
+Functions : In JavaScript, a function is a block of code designed to perform a specific task. It can be defined using the 
+            function keyword or as an arrow function, and can accept parameters and return a resultand Can be invoked Whenever 
+            needed.
+
+# Reuse and Run Any Point Of Time .
+
+HInglish  : JavaScript mein, function ek code ka block hota hai jo specific task ko perform karta hai. Isse function keyword ya
+            arrow function se define kiya ja sakta hai, aur yeh parameters le sakta hai, result return kar sakta hai, aur jab 
+            zarurat ho tab invoke (call) kiya ja sakta hai.
+
+
+Question : Why we Need Functions ?
+
+Answers  : Functions are important because they help in:
+
+1. Code Reusability : Once a function is written, it can be used multiple times without rewriting the same code, saving time and effort.
+2. Modularity : Functions break down complex tasks into smaller, manageable parts, making the code easier to understand and maintain.
+3. Avoiding Redundancy : By using functions, you avoid repeating the same logic or code in different parts of your program.
+4. Maintainability: It’s easier to debug or update code when it's organized into functions, since changes are isolated to 
+                    specific parts of the program.
+5. Abstraction : Functions allow you to hide complex logic inside, making your code cleaner and easier to read.
+
+
+# Function ke andar jo input hota hai use hum Parameter Kehte hai.
+# The Parameter of Function they are as like local Variables of function and they have block space.
+  { Function ke andar hi sirf valid hote hai }
+
+
+HINGLISH : 
+
+❓ Question: Why do we need Functions? 
+
+✅ Answer: Functions important hote hain because: -To reuse some code which is ver lobng to re-write
+
+Code Reusability: Ek baar function likhne ke baad, usse multiple times use kiya ja sakta hai bina same code dobara likhe. 
+                  Isse time aur effort dono save hote hain.
+Modularity: Functions complex task ko chhote-chhote parts mein divide kar dete hain, jisse code samajhna aur maintain karna easy 
+            ho jata hai.
+Avoiding Redundancy: Function use karke aap same logic ya code ko bar-bar likhne se bach sakte ho.
+Maintainability: Jab code functions mein properly organized hota hai, toh debug karna ya update karna easy hota hai, kyunki 
+                 changes sirf ek specific jagah karne hote hain.
+Abstraction: Function ke through aap complex logic ko hide kar sakte ho, jisse code clean aur readable lagta hai.
+
+# Note: Function ke andar jo input dete hain, unhe hum Parameters kehte hain.
+
+  1.Parameters ek tarah ke local variables jaise hote hain.
+  2.Inka scope sirf function ke andar hota hai – matlab function ke bahar ye valid nahi hote.
+  3.Ye variables sirf usi block (function ke andar) mein kaam karte hain.
+
+
+
+EXAMPLE : A simple function which was printing the name .
+           
+
+
+                                         function myUserName() {
+                                              console.log("K")
+                                              console.log("R")
+                                              console.log("I")
+                                              console.log("S")
+                                              console.log("H")
+                                              console.log("N")
+                                              console.log("A")
+                                                }
+
+                                                  ___________> Execution
+                                                 |           
+                                            myUserName()    
+                                                |
+                                        Function Reference
+
+
+# Function ko Call Karte Samay jo bhi hum Pass krte hai use hum Arguments bolte hai.
+
+
+console.log("IMMEDIATELY WORKS")   /// THis code Works Immedialety in the console without calling the anything.
+
+// function Krishna(){
+//     console.log("Hello Guys")
+// }
+
+// Krishna()
+// Krishna()
+// Krishna()
+
+// Functiopns areStart doing their work whenever they were Called .
+
+
+WET- CODE : Writing Everything Twice.
+DRY- Code : Don't Repeat Yourself.
+
+
+
+DRY - RUN Of the Code IS The Another thing to run the code in the memmorize Way. IN Pen Or Paper.
+
+
+                                             /*    PARAMETER IN FUNCTIONS    /*
+
+  EXAMPLE : function greet(name){
+             console.log(name)
+                  }
+                                                         OUTPUT
+
+           greet('hEllo world')                       -  hello world
+           greet('hii')                               -  hii 
+           greet('byy')                               -  byy
+           greet('Krisnna')                           -  Krishna
+           greet('Singh')                             -  Singh
+
+
+
+
+# There Are 6 Types Of Functions : 
+
+1. Function Statement :     function abcd(){              // This Pattern Called a function Statement.
+
+                                            }
+
+2. Function Expresion. :    Var abcd = function() =>{             // Function Expresion.
+
+                                                    }                                           
+
+
+3. Anonymous Function :     function() {
+                                                                   // function Anonymous.
+                                       }
+
+4. Fat Arrow Function :    const add () =>{               // Compact Way Of Writing a Function.
+   
+                                          }
+
+5. Fat Arrow With One Parameter :     let abcd = a =>{     // In this fat arrow function with ONe pArameter  you should remove the fat()
+                                       console.log(a)         from the function {Method} .
+                                                     }
+
+                                          abcd(12)
+
+6. Fat Arrow Function With Implicit Return : function abcd(){
+                                                   return 12;
+                                                             }
+
+# Fat Arrow Function With Implicit Return .  Apne App Return Krna Without Return Keyword.
+# Or jab humm krte hai toh vo explixit Return hota hai                                                            
+
+// #PAssinG a parameter in a Function.
+
+function greet(name){
+    console.log(name)
+}
+ greet('hEllo world')
+greet('hii')
+greet('byy')
+greet('Krisnna')
+greet('Singh')
+
+
+                                          /* ANONYMOUS FUNCTION */
+
+📌 Anonymous Function kya hoti hai?
+   Anonymous function ek function without a name hota hai. Iska naam nahi hota, aur usually ise expression ke form mein ya immediately 
+   call karne ke liye use kiya jata hai.
+
+   Example  : const greet = function() {
+              console.log("Hello!");
+              };
+
+              greet();  // Output: Hello!
+
+ 🗣️ Hinglish: Function ko ek variable greet mein assign kiya gaya, fir us variable ko call karke function run hua.  
+
+
+ 💡 2. Immediately Invoke karna (IIFE - Immediately Invoked Function Expression):
+
+  (function() {
+    console.log("I am anonymous and called immediately!");
+  })();
+
+🗣️ Hinglish: Function likhne ke baad usko turant () se call kar diya gaya. Isse bolte hain IIFE.     
+
+💡 3. Arrow Function ke through (Anonymous hi hota hai):
+
+const sum = (a, b) => {
+    return a + b;
+};
+
+console.log(sum(5, 3));  // Output: 8
+🗣️ Hinglish: Arrow function bhi anonymous hota hai jab tak usse kisi variable mein assign na kiya jaye. 
+   Yahaan sum ek variable hai jo function ko hold kar raha hai.
+
+
+
+Summary in One Line Hinglish:
+
+Anonymous function ko ya toh variable mein assign karke call karo (greet()), ya turant likhne ke baad () laga ke call karo (IIFE),
+ ya arrow function ke form mein use karo.
+
+                                                /* REST PARAMETER  */
+
+ In JavaScript, the rest parameter allows you to collect all remaining arguments passed to a function into an array.
+ This can be especially useful when you're not sure how many arguments will be passed to a function. It provides a 
+ cleaner and more flexible way to handle variable numbers of arguments.
+
+ The rest parameter is represented by three dots (...) followed by a variable name in the function's parameter list.
+
+Syntax:   function myFunction(...rest) {
+                   console.log(rest);
+                               } 
+
+
+Example 1: Basic Usage of Rest Parameter :
+
+         function sum(...numbers) {
+        return numbers.reduce((total, num) => total + num, 0);
+               }
+
+              console.log(sum(1, 2, 3, 4));  // Output: 10
+              console.log(sum(5, 10));       // Output: 15
+
+Summary : Here, numbers is an array containing all the arguments passed to the sum function, and we use reduce to add them together.
+
+Example 2: Rest Parameter with Other Parameters :
+
+            function greet(greeting, ...names) {
+            console.log(greeting + " " + names.join(", "));
+            }
+
+            greet("Hello", "Alice", "Bob", "Charlie");
+           // Output: Hello Alice, Bob, Charlie
+
+Example 3: Rest Parameter with Destructuring  :
+
+             function displayInfo(name, age, ...hobbies) {
+             console.log(`Name: ${name}, Age: ${age}`);
+             console.log("Hobbies: " + hobbies.join(", "));
+             } 
+
+             displayInfo("John", 30, "Reading", "Cycling", "Traveling");
+             // Output:
+            // Name: John, Age: 30
+            // Hobbies: Reading, Cycling, Traveling
+
+
+
+ # Key Points to Remember:
+
+ 1. Rest parameters collect all remaining arguments into an array.
+ 2. It must always be the last parameter in the function signature.
+ 3. It can be used to handle functions with a variable number of arguments in a clean and flexible way.
+
+
+ Output : The rest parameter in JavaScript takes the remaining function arguments and collects them into an array.
+          So, the rest parameter always outputs an array (even if no extra arguments are passed).
+
+Output Format: The rest parameter will output an array containing those extra arguments.
+
+# EXAMPLE OF REST PARAMETER :  ...Spread Operator
+
+#EXAMPLE : 1
+
+function logMessages(...messages) {
+  console.log(messages);  // Output will be an empty array
+}
+
+logMessages("Hello");
+logMessages();            //  Gives Empty Array 
+
+# EXAMPLE : 2
+
+function abcd(a,b,c,...rest){
+    console.log(a,b,c,rest)
+}
+
+abcd(1,2,3,4,5,6,7,8,9)
+
+
+#  You Cannot add a Any Parameter after a REST parameter. It Could Through Error.
+
+// Example :            function sums(...nums,a){     // OUTPUT : SyntaxError: Rest parameter must be last formal parameter
+                                 console.log(a)                           
+                              console.log(nums)                       
+                           console.log(...nums)                    
+                             }
+
+                              sums(1,2,3,4,5)
+
+
+
+
+# Jis Function me Hum return Keyword Use nhi krte hai Usme me Vo Function Undefined Return Krta Hai.
+
+
+                                                   /* HOISTING  */
+
+HOISTING refer to the process wherby the interpreter appear to move the declarations to the top of the code before execution.
+Variable Can thus be referred before they are declared in Javascript.
+
+HINGLISH : Hoisting ek process hai jisme JavaScript ka interpreter aisa lagta hai jaise wo variable aur function declarations
+           ko code ke top par "utha" deta hai, execution se pehle.
+
+Iska matlab ye hai ki aap kisi variable ko uske declare hone se pehle bhi refer kar sakte ho — lekin dhyan rahe, value assign hone 
+se pehle uska value undefined hoga (agar var use kar rahe ho).
+
+Function declarations bhi hoist hoti hain, aur aap unhe pehle call kar sakte ho:
+
+# EXAMPLE :  sayHello(); // Output: Hello!
+
+             function sayHello() {
+               console.log("Hello!");
+             }
+             
+
+
+
+Important Note : Javascript only hoist declaration not initialization. 
+
+Example : hello("Krishna")
+          function hello(){
+            ...           work!
+          }
+
+
+# HOISTING With Let ANd Var :
+
+Console.log(num)   -> Error with let or Const.
+                   -> with Var unDefined is Printed.
+
+1. Hoisting with var : When you declare a variable with var, it is hoisted to the top of its scope, but only the declaration is hoisted,
+                       not the initialization. As a result, if you try to access the variable before it’s initialized, it will return 
+                       undefined (not a ReferenceError).
+
+            Hinglish :  Hoisting with var ko samajhne ke liye, yeh samajhna zaroori hai ki jab aap variable declare karte ho var se, toh 
+                        sirf uska declaration (jo var likhne se hota hai) upar move ho jata hai, lekin initialization (value assign karna)
+                        upar nahi hoti. Iska matlab hai ki agar aap variable ko uske initialization ke pehle access karte ho, toh wo
+                        undefined dega, ReferenceError nahi.
+
+  Example : console.log(myVar); // undefined (kyunki declaration ho gaya hai lekin initialization nahi)
+            var myVar = 5;
+            console.log(myVar); // 5 (ab value assign ho gayi hai)
+
+  a. Jab aap var myVar = 5; likhte ho, toh JavaScript pehle var myVar; ko top par le jaata hai (hoisting) 
+     aur baad mein value 5 assign hoti hai.
+
+  b. Jab aap pehle console.log(myVar); likhte ho, toh variable myVar ka declaration ho chuka hota hai, 
+     lekin value assign nahi hui hoti, isliye undefined dikhega.   
+
+To summarize : var ke saath, declaration hoisting ke through upar chali jaati hai, lekin value assign karte waqt uski value undefined 
+               rahegi jab tak assignment nahi hoti.
+
+
+2. Hoisting with let and const : Jab aap variable ko let ya const se declare karte ho, toh wo variable block ke top par hoisted hota hai,
+                                 lekin wo ek "temporal dead zone" (TDZ) mein chala jaata hai. Yeh TDZ wo period hota hai jab tak us
+                                 variable ko initialize nahi kiya jaata. Matlab, jab tak aap us variable ko initialize nahi karte, 
+                                 aap usse access nahi kar sakte, aur agar karte ho, toh ReferenceError milega.  
+
+  Example:
+
+let ke saath :   console.log(myLet); // ReferenceError: Cannot access 'myLet' before initialization
+                 let myLet = 10;
+                 console.log(myLet); // 10
+
+const ke saath : console.log(myConst); // ReferenceError: Cannot access 'myConst' before initialization
+                 const myConst = 20;
+                 console.log(myConst); // 20
+
+Explanation : 1. Jab aap let ya const se variable declare karte ho, toh wo hoisted hota hai, lekin initialization 
+                 ke liye usko TDZ mein rakh diya jaata hai.
+              2. Agar aap usse initialization se pehle access karte ho, toh JavaScript aapko ReferenceError dega kyunki
+                 variable ko abhi tak initialize nahi kiya gaya hai.
+
+To summarize : let aur const ke saath, variable hoisted hota hai lekin initialization se pehle usse access karna allowed nahi hota.
+               Agar aap karte ho, toh ReferenceError milega.
+
+
+
+                                                  TDZ ( Temporal Dead Zone) kya hota hai 
+
+  Jab aap JavaScript mein let ya const ka use karte ho, toh variable block scope mein hoisted hota hai, lekin wo ek temporal dead 
+  zone mein chala jaata hai. Yeh temporal dead zone ek aise period ko refer karta hai jab tak variable ko initialize nahi kiya gaya,
+  uss time tak us variable ko access karna allowed nahi hota.
+
+TDZ ka matlab hai ki aap variable ko uski declaration se pehle access nahi kar sakte, chahe wo hoisted ho chuka ho. Agar aap aise access
+ karne ki koshish karte ho, toh JavaScript aapko ReferenceError dega.
+
+
+TDZ ka kaam: Jab let ya const se variable declare kiya jaata hai, toh wo hoisted hota hai lekin uski actual initialization 
+             ke pehle wo ek dead zone mein hota hai.
+             Is dead zone mein variable "exist" karta hai, lekin usse access karne ki koshish karne pe ReferenceError milega.
+
+Example : console.log(myVar); // ReferenceError: Cannot access 'myVar' before initialization
+          let myVar = 10;
+
+TDZ ka behavior: 1. Hoisting: Variable hoisted ho jaata hai.
+                 2. TDZ: Variable ko initialize hone tak access nahi kiya jaa sakta.
+                 3. Accessing before initialization: Agar aap variable ko initialize hone se pehle access karte ho, 
+                    toh ReferenceError milta hai.
+
+To summarize :TDZ is the time between the start of the block and the line where the let or const variable is initialized.
+              During this time, accessing the variable will result in a ReferenceError.
+
+
+
+
+ : Function Expression and class Expresion are not hiosted.
+ # HOISTING is (to many developers) an unknown or overlooked behaviour of JavaScript.
+   If a developer does not understand hoisting programs may contains bugs(error).
+
+   To avoid bug always declare all variables at the beginnig of every scope.
+   Since how this is Java-Script interepts the code,It is always a good Rule.
+
+
+
+ # SPREAD OPERATOR : HOld The Previous Value of Array.
+   Example : let num = [1, 2, 3, 4, 5, 6];  // Initial array
+             num = [...num, 7, 8, 9];  // Using the spread operator to add elements to the array
+             console.log(num);
+
+
+Spread Operator Explanation : In the code above, the spread operator (...) is used to unpack the elements of the existing num array
+                              and append 7, 8, and 9 to it. The result is a new array that contains all the original elements plus the 
+                              new ones.
+
+
+When you pass an array to Math.max() or Math.min() directly, it won't work as you might expect. This is because Math.max() 
+and Math.min() expect individual arguments, not an array.           
+
+Example with an array : const arr = [1, 2, 3, 4, 5];
+                        console.log(Math.max(arr)); // NaN
+                        console.log(Math.min(arr)); // NaN
+
+
+
+Why does this happen? : Math.max() and Math.min() do not accept an array directly. They expect separate arguments, like this:
+
+1. Without spreading (Math.max(arr)): It gives NaN because Math.max() expects individual numbers, not an array.
+2. With spreading (Math.max(...arr)): It works correctly, finding the maximum or minimum by unpacking the array's
+    values as individual arguments.
+
+
+# In this function test() they have a by default global Object, Which stores Arguments.
+
+
+function test(){
+    console.log(arguments)           // OUTPUT : [Arguments] { '0': 1, '1': 'Hello' }
+    console.log(arguments[1])         // OUTPUT: 'Hello'
+    console.log("Inside Text")       // OUTPUT : Inside Text
+}
+
+test(1,"Hello")
+
+
+# Something More About Arrow Functions : 
+
+1. Arrow Function With No Parameter:  
+
+const greet=()=>{console.log("HEllo Js")}
+greet()
+
+
+2. Arrow Function With  Parameter: 
+
+const add = (num1,num2) => num1+num2;   // if You Writing a code in a same line there was a no need of return Statement by Explicitly
+
+3. Multiple Line Arrow Functions : 
+
+const multiply = (length,breadth) =>{
+  a=length*breadth;
+  return a;
+}
+   
+
+
+
+
+    
+            
+                                              
