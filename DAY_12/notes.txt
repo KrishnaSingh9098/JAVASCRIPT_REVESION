@@ -1,0 +1,106 @@
+
+
+let val1 = 10;
+let val2 = 5;
+function addNum(num1,num2){
+    let total = num1+num2
+    return total;
+}
+
+let result1 = addNum(val1,val2)
+let result2 = addNum(10,2)
+
+
+
+
+🔷 JavaScript Execution Context Diagram (Step-by-Step)
+📌 Code
+let val1 = 10;
+let val2 = 5;
+
+function addNum(num1, num2) {
+    let total = num1 + num2;
+    return total;
+}
+
+let result1 = addNum(val1, val2);
+let result2 = addNum(10, 2);
+
+🧠 Step 1: Global Execution Context (GEC)
+Memory Creation Phase
+Global Memory:
+val1     → uninitialized (TDZ)
+val2     → uninitialized (TDZ)
+addNum   → function
+result1 → uninitialized (TDZ)
+result2 → uninitialized (TDZ)
+
+Execution Phase
+val1 = 10
+val2 = 5
+
+📌 Step 2: First Function Call → addNum(val1, val2)
+Function Execution Context (FEC-1)
+Memory Phase
+num1  → 10
+num2  → 5
+total → uninitialized
+
+Execution Phase
+total = 10 + 5 → 15
+return 15
+
+Call Stack at this moment
+┌───────────┐
+│ addNum()  │
+├───────────┤
+│   GEC     │
+└───────────┘
+
+
+After return:
+
+result1 = 15
+
+📌 Step 3: Second Function Call → addNum(10, 2)
+Function Execution Context (FEC-2)
+Memory Phase
+num1  → 10
+num2  → 2
+total → uninitialized
+
+Execution Phase
+total = 10 + 2 → 12
+return 12
+
+Call Stack
+┌───────────┐
+│ addNum()  │
+├───────────┤
+│   GEC     │
+└───────────┘
+
+
+After return:
+
+result2 = 12
+
+✅ Final Global Values
+val1 = 10
+val2 = 5
+result1 = 15
+result2 = 12
+
+📝 Interview-Ready Explanation (Short)
+
+JavaScript first creates a Global Execution Context.
+Memory is allocated for variables and functions.
+When a function is called, a new Function Execution Context is created, pushed onto the call stack, executed, and then removed after returning the value.
+
+⚠️ Important Notes
+
+let variables stay in Temporal Dead Zone until initialized
+
+Each function call creates a new execution context
+
+Call stack follows LIFO (Last In First Out)
