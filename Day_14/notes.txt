@@ -1,0 +1,46 @@
+                             /* IIFE : IMMEDIATELY Invoked Function Execution */                
+
+Immedialety invoked Function Expression (iife) are JavaScripts Functions that are executed immediately.
+They are typically used to create a localScope for Variables to present them from polluting the global scope.
+
+Explanation : The Function is wrapped in paranthesis (function (){.....}) followed by () to immediately invoked it.
+
+Example : (function addTwo(){                                      First Paranthesis         
+            return num1+num2;                                       ^
+                        })                                          |
+          (Console.log(3+5)).                                      ( )                ( ) : Second Paranthesis
+                                                                    
+                                                          Function defination.         Function Execution
+
+
+ # Global scope ke pollution se problem hoti hai kai bar to usGlobal scope ke jo variable hai uske polution ko hatanre ke liye.
+ # This COuld also Works inn Arrow Functions.
+
+
+
+ Example :  // Here, we're defining a variable `ans` and assigning it the result of an IIFE (Immediately Invoked Function Expression).
+            let ans = (function abcd() {
+           // Inside the IIFE, we define a local variable `a` with the initial value of 12.
+           var a = 12;
+ 
+          // The function returns an object with two methods: `set` and `get`.
+          return {
+          // `set` method: It accepts a parameter `val` and assigns it to the variable `a`.
+          set: function(val) {
+          a = val; // This updates the value of `a` to whatever value is passed to `set()`.
+          },
+          // `get` method: It logs the current value of `a` to the console.
+          get: function() {
+          console.log(a); // This prints the current value of `a` to the console.
+         },
+         };
+         })();
+
+// The `set` method is now called with the argument `"32"`, which will change the value of `a` to "32".
+ans.set("32");
+
+// Now, the `get` method is called. It will print the current value of `a`, which is now `"32"`.
+ans.get(); // Output: "32"
+
+
+# Some Examples BAsed ON IIFE ARE also in the Script.js File.

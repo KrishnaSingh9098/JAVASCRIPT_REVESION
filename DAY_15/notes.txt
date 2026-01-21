@@ -1,0 +1,92 @@
+                                            <-- SCOPES IN JAVASCRIPT -->
+ 
+ 
+ # Global Scope : A variable declared in the global scope is accessible throughout the entire program.
+                  That means it can be accessed from any part of the code.
+                  
+                  In JavaScript, global variables are usually declared outside any function or block.
+
+ #HInglish : Global scope ka matlab hai ki agar aapne koi variable bahar declare kiya hai, toh woh variable
+             aapke poore code mein kahin bhi accessible hoga.
+
+             Jaise globalVar ko humne function ke andar ya bahar dono jagah use kiya.
+
+
+Example : let globalVar = "I am a global variable";
+
+          function showGlobalVar() {
+          console.log(globalVar); // Can access the global variable here
+          }
+
+showGlobalVar(); // Output: I am a global variable
+console.log(globalVar); // Output: I am a global variable
+
+
+ # LOCAL SCOPE : A local scope refers to the scope inside a function or block. A variable declared inside a function 
+                 or block is local to that function/block and can only be accessed within that specific scope.
+
+ # Hinglish Explanation: Local scope ka matlab hai ki jo variable aapne function ke andar declare kiya hai, woh variable 
+                         sirf usi function ke andar accessible hoga, baahar nahi.
+
+ Imp POINT : Jaise localVar ko hum function ke andar access kar rahe hain, lekin function ke bahar use nahi kar sakte.
+ What ERROR IT SHOWS : script.js:249 Uncaught ReferenceError: localVar is not defined.
+
+ EXAMPLE : function localScopeExample() {
+           let localVar = "I am a local variable";
+           console.log(localVar); // Can access localVar inside the function
+           }
+
+localScopeExample(); // Output: I am a local variable
+console.log(localVar); // Error: localVar is not defined
+
+
+# FUNCTIONAL SCOPE :  A function scope refers specifically to variables declared inside a function using var. 
+                      These variables are only accessible within the function in which they are declared. var 
+                      is function-scoped, meaning it is confined to the function block.
+
+# Hinglish Explanation : Function scope ka matlab hai ki jab aap var use karte ho, toh jo variable aap function ke andar 
+                         declare karte ho, woh sirf usi function ke andar accessible hota hai.                     
+
+                         functionScopedVar ko sirf function ke andar use kar sakte hain, bahar nahi.
+
+ Example : function functionScopeExample() {
+           var functionScopedVar = "I am function-scoped";
+           console.log(functionScopedVar); // Can access functionScopedVar inside the function
+           }
+
+functionScopeExample(); // Output: I am function-scoped
+console.log(functionScopedVar); // Error: functionScopedVar is not defined
+
+
+ # BLOCK SCOPE : Block Scope in javascript refers to the visibility of variablbes in functions within a block of code.
+                 A block of code is a group of statement that are enclosed in curly braces ({ }).
+                 Variables and Functions declared in a  block's Scope are only Visible within that block.
+
+ # Hinglish Explanation : Block scope ka matlab hai ki jab aap let ya const se koi variable declare karte ho, toh woh variable sirf us
+                          block (jaise if, for loops) ke andar accessible hota hai, bahar nahi.   
+
+                          Jaise blockScopedVar ko hum sirf block ke andar use kar rahe hain, baahar error milega.
+
+ EXAMPLE : if (true) {
+           let blockScopedVar = "I am block-scoped";
+           console.log(blockScopedVar); // Can access blockScopedVar inside the block
+           }
+
+console.log(blockScopedVar); // Error: blockScopedVar is not defined
+
+
+Key Differences:
+
+  s.no     Scope Type                 Variable Declaration                       Accessibility
+   
+  1.      Global Scope                var, let, const (outside functions)        Accessible anywhere in the program
+  2.      Local Scope                 var, let, const (inside a function)        Accessible only inside the function/block  
+  3.      Function Scope              var                                        Accessible only inside the function
+  4.      Block Scope                 let, const                                 Accessible only inside the block (e.g., loop or conditional)
+  
+
+ IN SUMMARY : 
+ 1. Global Scope: Accessible everywhere.
+ 2. Local Scope: Accessible only inside a function/block.
+ 3. Function Scope: Specifically for var, accessible only within the function.    
+ 4. Block Scope: Specific to let and const, accessible only within the block (like inside if or for loops). 
