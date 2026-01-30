@@ -1,0 +1,62 @@
+
+                                         /* Higher Order Functions  */
+
+A Higher-Order Function in JavaScript (or in any functional programming language) is a function that:
+
+1. Takes one or more functions as arguments.
+2. Returns a function as a result (or returns a function inside it).
+
+In other words, higher-order functions can either take functions as inputs, return functions as outputs, or both.
+
+
+HInglish : HIgher Order functions vo functions hote hai jo dusre functions ko Ya toh as a parameter lete hai,
+           Kisis dusre func ko as a parameter use kr rhe hote hai; Ya to return kr rhe hote hai.
+
+
+
+This concept allows for greater flexibility and expressiveness in your code.
+Higher-order functions are common in JavaScript, especially when working with array methods like .map(), .filter(), and .reduce().
+
+
+Example 1: A Higher-Order Function that takes a function as an argument:
+
+// Defining a function `greetUser` which takes two parameters:
+// 1. `name` (a string) 
+// 2. `greetFunction` (a function that will be called inside `greetUser`)
+function greetUser(name, greetFunction) {
+  // Inside the `greetUser` function, we call the passed `greetFunction` with the `name` as an argument.
+  // This allows the flexibility of using different greeting functions.
+  return greetFunction(name); // It calls `greetFunction` with `name` and returns the result.
+}
+
+// Defining a function `sayHello` which takes `name` as an argument and returns a greeting string.
+function sayHello(name) {
+  // The `sayHello` function simply returns a greeting message by concatenating "Hello, " with the `name`.
+  return "Hello, " + name; // For example, if `name` is "Alice", it will return "Hello, Alice".
+}
+
+// Calling the `greetUser` function with the arguments "Alice" and the `sayHello` function.
+// Here, `sayHello` is passed as the second argument to `greetUser`.
+console.log(greetUser("Alice", sayHello)); // Output: "Hello, Alice"
+
+
+a. Here, greetUser is a higher-order function because it takes another function (sayHello) as an argument and calls it inside.
+b. sayHello is a simple function that is passed into greetUser.
+
+
+
+
+
+Example 2: A Higher-Order Function that returns a function:
+
+function multiplier(factor) {
+  return function(number) {
+    return number * factor;
+  };
+}
+
+const double = multiplier(2); // Returns a function that doubles the input
+console.log(double(5)); // Output: 10
+
+const triple = multiplier(3); // Returns a function that triples the input
+console.log(triple(5)); // Output: 15

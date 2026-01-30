@@ -1,0 +1,29 @@
+📦 What is a Multidimensional Array?
+
+A multidimensional array is an array inside another array (most commonly 2D).
+
+
+Example (2D Array)
+
+
+let cities = [
+  ["Mumbai", "Delhi", "Chennai"],
+  ["Sydney", "Melbourne", "Brisbane"],
+  ["Berlin", "Munich", "Hamburg"]
+];
+
+console.log(cities);
+
+🔍 Accessing Elements:
+
+console.log(cities[0][1]); // Delhi
+console.log(cities[2][0]); // Berlin
+
+➕ Adding Data
+Add a new row
+
+cities.push(["Paris", "Lyon", "Nice"]);
+
+Add to an existing row
+
+cities[1].push("Perth");
